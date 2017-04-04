@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+h1, h2{
+    color: white;
+}
+
+.from{
+    color:antiquewhite;
+}
+
+.news_content1{
+    font-family: verdana;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.list{
+    font-family: verdana;
+    font-size: 14px;
+    color: ghostwhite;
+}
+
+.photo_inf{
+    color: ghostwhite;
+    font-size:14px;
+}
+
+.lk{
+    color:floralwhite;
+    font-size: 17px;
+}

@@ -1,0 +1,272 @@
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC9njbyuNsqrH5XqxU343zjN-RpDCca7v4",
+            authDomain: "hw3-mywebpage.firebaseapp.com",
+            databaseURL: "https://hw3-mywebpage.firebaseio.com",
+            projectId: "hw3-mywebpage",
+            storageBucket: "hw3-mywebpage.appspot.com",
+            messagingSenderId: "105123744720"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>'LED street lights are disturbing my sleep'</title>
+    <!-- <link href="index.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("p").mouseover(function () {
+                $(this).css("background-color", "yellow");
+            });
+            $("p").mouseout(function () {
+                $(this).css("background-color", "white");
+            });
+
+            $("#omg").click(function () {
+                $("p").removeClass("normal");
+                $("p").removeClass("big");
+                $("p").addClass("small");
+            });
+            $("#omg1").click(function () {
+                $("p").removeClass("big");
+                $("p").removeClass("small");
+                $("p").addClass("normal");
+            });
+            $("#omg2").click(function () {
+                $("p").removeClass("small");
+                $("p").removeClass("normal");
+                $("p").addClass("big");
+            });
+        });
+    </script>
+    <style>
+        .small {
+            font-size: 50%;
+        }
+        
+        .normal {
+            font-size: 100%;
+        }
+        
+        .big {
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 id="test">'LED street lights are disturbing my sleep'</h1>
+            <div class="from">
+                <span>By Brian Wheeler,</span>
+                <span> BBC News, Washington DC</span>
+                <div>13 March 2017</div>
+                <div>
+                    <span><button id="omg">small</button></span>
+                    <span><button id="omg1">medium</button></span>
+                    <span><button id="omg2">large</button></span>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="news_content1">
+                <p><strong>In towns and cities across the world, the colour of night is changing. Traditional yellow sodium street lights are steadily being replaced by white LED bulbs. The new lights use less energy, dramatically cutting carbon emissions and saving money. But not everybody is happy.</strong></p>
+                <p>"When the leaves left the trees and I tried to sleep, I turned to one side and the light's shining right
+                    in my eyes."</p>
+                <p>Like most of us, Karen Snyder had never really paid much attention to street lights. But that all changed
+                    last year when the city council began installing LED lights outside her home in a quiet corner of Washington
+                    DC.
+                </p>
+                <p>In addition to the light shining into her bedroom, the 63-year-old teacher's guest room, where she watches
+                    TV, is now bathed in something akin to strong moonlight.</p>
+                <p>"It's like there's a ray coming in. Like a blue ray. Right directly on to the couch. If you are sitting down,
+                    the moon would be above the house and you'd get the beautiful feel of the moon. This is shining right
+                    in your eyes so it's pretty different than a moon. Moons don't go this low into the windows."</p>
+                <p>Her friend, Delores Bushong, says her sleep has also been disturbed by the LED street lights outside her
+                    home, and is now one of the main opponents of the new lighting in the city. She fears they will ruin
+                    the atmosphere on her back porch, where she likes to relax after dark in a hammock in the sweltering
+                    summer months.</p>
+                <p>"In some kinds of torture they put a light on someone's face all the time," she says. "Am I going to be subjected
+                    to a kind of torture forever? It doesn't make sense to me. Just because we have a new technology and
+                    you can save money."</p>
+                <p>Bushong has become well-versed in the jargon of colour temperature (measured in Kelvins) and light intensity
+                    (measured in Lumens), as she battles to get the city to take her concerns seriously. At the very least,
+                    she wants the 4,000-Kelvin bulbs in her neighbourhood, which she compares to the harsh lighting in a
+                    prison yard, to be replaced by bulbs with lower Kelvin ratings, closer in look and feel to the old high-intensity
+                    sodium bulbs.</p>
+                <p>The city insists it is listening to her campaign group's concerns but there is no turning back the march
+                    of the LEDs.</p>
+                <p>"There are many reasons why cities are switching to LED lights," says Seth Miller Gabriel, the director of
+                    Washington DC's Office of Public Private Partnerships.</p>
+                <p>"One, not be looked over, is cost - 50% or more over the life cycle of this new light. The lights last a
+                    lot longer. So we save electricity, by at least 50%, we save on the maintenance costs and we get a better
+                    lighting solution."</p>
+                <p>Then there are the environmental benefits: "We estimate that in the District of Columbia by switching our
+                    71,000 street lights over to LEDs we can save upwards of 30 million pounds (13,600 tonnes) of coal a
+                    year, in electricity we won't be using for the lights," he says.</p>
+            </div>
+            <img id="picture1" alt="Lionel Shriver misses the moody urban glow of sodium street lights">
+            <div class="photo_inf">Lionel Shriver misses the moody urban glow of sodium street lights</div>
+            <div class="news_content1">
+                <br>
+                <p>Miller Gabriel argues that many city-dwellers are blundering around in neighbourhoods that have never been
+                    properly lit, allowing crime to fester in the shadows. He dreams of a world where every street light
+                    is an LED. He may live long enough to see that happen.</p>
+                <p>About 10% of America's street lights have so far been converted, but the Department of Energy has estimated
+                    that if the whole country switched to LEDs over the next two decades it would save $120bn over that 20-year
+                    period.
+                </p>
+                <p>Cities across Europe and the Asia Pacific region are going down the LED route and, in China, the central
+                    planning agency is in the middle of a conversion programme it expects will cut annual carbon emissions
+                    by 48 million tonnes.</p>
+                <p>Against these sort of statistics, those campaigning against LEDs can sound like Luddites, railing against
+                    scientific progress, but they insist they have a strong case.</p>
+                <p>They point to a recent report by the American Medical Association (AMA), which warns that the blue light
+                    emitted by first generation high-intensity LEDs, used in many cities around the world including New York,
+                    can adversely affect circadian sleep rhythms, leading to reduced duration and quality of sleep, "impaired
+                    daytime functioning" and obesity.</p>
+                <p>The AMA report calls on cities to use the lowest-intensity LEDs possible and shade them better to reduce
+                    glare, which it warns can also harm wildlife.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>The rise of LED lights</h2>
+            <img id="picture2" alt="The rise of LED lights">
+            <div class="list">
+                <li>Light emitting diodes - or LEDs - first appeared as red lights in pocket calculators and digital watches
+                    in the 1960s</li>
+                <li>Now white LEDs are used in everything from car headlights to camera flashes and home lighting</li>
+                <li>The first LED street lights were rated 4,000 Kelvin or higher on the temperature chart used to describe colour</li>
+                <li>The latest LEDs have lower Kelvin ratings and produce a softer, amber light and less potentially harmful
+                    blue light</li>
+                <li>They are are up to 50% more energy-efficient than traditional yellow sodium lights and last for up 20 years,
+                    instead of two to five</li>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
+            <div class="news_content1">
+                <p>Seth Miller Gabriel says the report does not contain original research and is "more of a literature review
+                    of what's been published elsewhere".</p>
+                <p>"We would really like to see more concrete evidence of what's going on with these lights," he says. "If it's
+                    really a problem, based on a particular intensity of lights, we want to know that. That AMA report really
+                    didn't give us the kind of hard data we would need [on which] to base a large scale procurement."</p>
+                <p>He is overseeing the tendering process for the next phase of Washington's LED conversion which he promises
+                    will be done in a more sensitive way, with lower Kelvin ratings, better shading and remote controls,
+                    so that lights can be dimmed or increased in intensity at different times to suit the needs of particular
+                    neighbourhoods.
+                </p>
+                <p>But he adds: "Let's be honest, humans are not engineered for change. So when we come home and see a different
+                    light. Even if it's a much better light, there's going to be a reaction - 'Oh my goodness, it's a different
+                    light, what happened?'"</p>
+                <p>It is true that many of the same arguments being made against LED lights were heard in the early 1970s, when
+                    cities were converting to the yellow sodium lights we are so familiar with today.</p>
+            </div>
+            <img id="picture3" alt="There was no LED lighting in Edward Hopper's day">
+            <div class="photo_inf">There was no LED lighting in Edward Hopper's day</div>
+            <div class="news_content1">
+                <br>
+                <p>High-intensity sodium bulbs used less energy than the mercury vapour bulbs they replaced. But some campaigners,
+                    most notably a Vancouver-based artist called Ralf Kelman, argued at the time that their "antiseptic orange"
+                    glow was too bright and would damage growth in young trees, as well as blocking out the stars in the
+                    night sky.</p>
+                <p>The light pollution argument has also been used against LEDs, although <strong><a href="http://www.bbc.com/news/technology-22292129">some researchers say that properly directed</a></strong>,
+                    they could dramatically improve the visibility of stars.</p>
+                <p>But, for some people, the debate goes beyond dry arguments about Kelvin ratings, light pollution and carbon
+                    emissions and touches on questions about the quality of life city-dwellers should expect.</p>
+                <p>"When the lighting is right you have a sense of peace and contemplation, of aesthetic joy in the world,"
+                    says novelist Lionel Shriver, who is campaigning against LEDs in the South Brooklyn neighbourhood where
+                    she spends part of the year.</p>
+                <p>"I am not someone who believes she can stand in the way of the march of the LEDs. The savings in energy are
+                    too great. The savings in money are too great. And if we just say 'but it's not pretty' that's not going
+                    to stop these things.</p>
+                <p>"The truth is that the technology of LEDs has advanced fantastically so that it is no longer necessary to
+                    make a stark choice between economy and the environment and aesthetics. You can have both.</p>
+                <p>"What is going on in some cities, in New York especially, that is what I am most familiar with, amounts to
+                    a kind of widespread civic vandalism."</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <img src="4.png" alt="logo">
+            <p class="news_content1">Join the conversation - find us on Facebook, Instagram, Snapchat and Twitter.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>Related Topics</h2>
+            <p><a href="http://www.bbc.com/news/topics/0f37fb35-7f9e-4e49-b189-9d7f1d6fb11f/environment" class="lk">Environment</a></p>
+
+        </div>
+
+        <hr>
+        <div class="row">
+            <h2>Leave a comment</h2>
+            <label>Name：<input type="text" id="n"><br>
+            <label>Content：<input type="text" id="c">
+            <button id="btn">送出</button>
+        </div>
+        <div class="gotop" onclick="myFunction()">go top</div>
+    </div>
+
+
+
+    <script>
+                                    var storage = firebase.storage();
+                                    var storageRef = firebase.storage().ref();
+
+                                    publicRef = storageRef.child('public/1.jpg');
+                                    console.log(publicRef);
+                                    publicRef.getDownloadURL().then(function (url) {
+                                        console.log('url = ', url);
+
+                                        var img = document.getElementById('picture1');
+                                        img.src = url;
+                                    });
+                                    publicRef = storageRef.child('public/2.jpg');
+                                    console.log(publicRef);
+                                    publicRef.getDownloadURL().then(function (url) {
+                                        console.log('url = ', url);
+
+                                        var img = document.getElementById('picture2');
+                                        img.src = url;
+                                    });
+                                    publicRef = storageRef.child('public/3.jpg');
+                                    console.log(publicRef);
+                                    publicRef.getDownloadURL().then(function (url) {
+                                        console.log('url = ', url);
+
+                                        var img = document.getElementById('picture3');
+                                        img.src = url;
+                                    });
+
+
+                                    document.getElementById('btn').addEventListener('click', function (e) {
+                                        var comment_name = document.getElementById('n').value;
+                                        var comment_content = document.getElementById('c').value;
+                                        var afuRef = storageRef.child('texts/public/secret-message-'+ comment_name +'.txt');
+                                        afuRef.putString(comment_name + " : ").then(function (snapshot) {
+                                            console.log('Uploaded a raw string!');
+                                        });
+                                        afuRef.putString(comment_content).then(function (snapshot) {
+                                            console.log('Uploaded a raw string!');
+                                        });
+                                    });
+
+
+
+    </script>
+</body>
+
+</html>
